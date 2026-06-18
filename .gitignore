@@ -37,6 +37,9 @@ Thumbs.db
 # Qoder
 .qoder/
 
+# Reference materials
+参考资料/
+
 # Sensitive connection files
 *连接*.txt
 
