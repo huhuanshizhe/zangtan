@@ -49,43 +49,50 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* About */}
+          {/* Story */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-foreground">
-              About
+              Story
             </h3>
             <ul className="mt-4 space-y-3">
               <li>
-                <Link
-                  href="/story"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Our Story
-                </Link>
+                <Link href="/story" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Our Story</Link>
               </li>
               <li>
-                <Link
-                  href="/story/craftsmanship"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Craftsmanship
-                </Link>
+                <Link href="/story/craftsmanship" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Craftsmanship</Link>
               </li>
               <li>
-                <Link
-                  href="/shipping-returns"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Shipping & Returns
-                </Link>
+                <Link href="/story/materials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Materials & Dyes</Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Contact
-                </Link>
+                <Link href="/story/patterns" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Patterns & Symbols</Link>
+              </li>
+              <li>
+                <Link href="/story/history" className="text-sm text-muted-foreground hover:text-foreground transition-colors">History</Link>
+              </li>
+              <li>
+                <Link href="/journal" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Journal</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-foreground">
+              Support
+            </h3>
+            <ul className="mt-4 space-y-3">
+              <li>
+                <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+              </li>
+              <li>
+                <Link href="/shipping-returns" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Shipping & Returns</Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Privacy</Link>
+              </li>
+              <li>
+                <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms</Link>
               </li>
             </ul>
           </div>

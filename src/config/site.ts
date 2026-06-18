@@ -8,6 +8,7 @@ export const siteConfig = {
   nav: [
     { title: "Collection", href: "/collection" },
     { title: "Story", href: "/story" },
+    { title: "Journal", href: "/journal" },
     { title: "About", href: "/about" },
   ],
 

@@ -242,6 +242,59 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== Reference Gallery ===== */}
+      <section className="py-24 lg:py-32 bg-secondary/30">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">
+              From the Workshop
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-4">
+              A Glimpse into the Craft
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Behind every carpet is a world of handwork — spinning, dyeing, knotting, trimming.
+              These are the hands and materials that bring Woven Plateau to life.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            {[
+              { src: "/images/reference/微信图片_20260617161732_20_2297.jpg", alt: "Artisan weaving on a traditional vertical loom", span: "md:col-span-2 md:row-span-2" },
+              { src: "/images/reference/微信图片_20260617161715_14_2297.jpg", alt: "Close-up of hand-knotting technique", span: "" },
+              { src: "/images/reference/微信图片_20260617161737_22_2297.jpg", alt: "Naturally dyed wool yarns", span: "" },
+              { src: "/images/reference/微信图片_20260617161735_21_2297.jpg", alt: "Preparing highland wool for spinning", span: "" },
+              { src: "/images/reference/微信图片_20260617161720_16_2297.jpg", alt: "Traditional Tibetan carpet patterns", span: "md:col-span-2" },
+              { src: "/images/reference/微信图片_20260617161724_18_2297.jpg", alt: "Antique carpet detail", span: "" },
+              { src: "/images/reference/微信图片_20260617161722_17_2297.jpg", alt: "Finished carpet in domestic setting", span: "" },
+              { src: "/images/reference/微信图片_20260617161726_19_2297.jpg", alt: "Dragon and phoenix motif detail", span: "md:col-span-2" },
+            ].map((img, i) => (
+              <div
+                key={i}
+                className={`${img.span} overflow-hidden rounded-sm bg-secondary`}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/story/craftsmanship"
+              className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              Discover the full process
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* ===== Promise Section ===== */}
       <section className="py-20 border-t border-border">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
