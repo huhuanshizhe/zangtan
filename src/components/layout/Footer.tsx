@@ -14,8 +14,8 @@ export function Footer() {
             >
               {siteConfig.name}
             </Link>
-            <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-xs">
-              {siteConfig.tagline}
+            <p className="mt-3 text-sm text-muted-foreground leading-relaxed max-w-xs italic">
+              {siteConfig.slogan}
             </p>
             <p className="mt-4 text-xs text-muted-foreground">
               Handwoven on the Tibetan plateau using highland wool and centuries-old techniques.

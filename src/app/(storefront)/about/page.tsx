@@ -34,6 +34,12 @@ export default function AboutPage() {
             traditions.
           </p>
 
+          <blockquote className="border-l-2 border-primary/40 pl-6 py-2 my-10">
+            <p className="font-serif text-2xl text-foreground leading-snug italic">
+              Highland Wool, Hand-Knotted Soul.
+            </p>
+          </blockquote>
+
           <p className="text-muted-foreground leading-relaxed">
             We work directly with weavers and workshops on the Tibetan plateau,
             ensuring that each carpet in our collection is made using traditional

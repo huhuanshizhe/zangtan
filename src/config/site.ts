@@ -4,6 +4,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://wovenplateau.com",
   tagline: "A rug to live on, not just walk on.",
   heroTagline: "Woven by hand on the Tibetan plateau",
+  slogan: "Highland Wool, Hand-Knotted Soul.",
   
   nav: [
     { title: "Collection", href: "/collection" },

@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: "Woven Plateau",
     title: "Woven Plateau — Authentic Handwoven Tibetan Carpets",
     description:
-      "Authentic handwoven Tibetan carpets from the roof of the world. Each piece is a unique work of art — woven from highland wool using techniques passed down through generations.",
+      "Highland Wool, Hand-Knotted Soul. Authentic handwoven Tibetan carpets from the roof of the world. Each piece is a unique work of art — woven from highland wool using techniques passed down through generations.",
   },
   twitter: {
     card: "summary_large_image",

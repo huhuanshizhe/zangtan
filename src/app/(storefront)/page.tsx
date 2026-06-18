@@ -60,7 +60,7 @@ export default function HomePage() {
         />
         <div className="relative z-20 mx-auto max-w-7xl px-6 lg:px-8 pb-20 w-full">
           <p className="text-sm uppercase tracking-[0.3em] text-white/80 mb-4">
-            Handwoven Tibetan Carpets
+            {siteConfig.slogan}
           </p>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-white leading-[1.1] max-w-3xl">
             {siteConfig.heroTagline}
