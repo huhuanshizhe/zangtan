@@ -24,9 +24,14 @@ export default function ArticlePage() {
         </p>
         <p className="text-xs text-muted-foreground mb-12">June 2026 · 5 min read</p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/reference/微信图片_20260617161726_19_2297.jpg" alt="Tibetan carpet with dragon and phoenix motifs showing intricate border designs" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161726_19_2297.jpg" alt="Tibetan carpet with dragon and phoenix motifs showing intricate border designs" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Dragon and phoenix motifs — a visual language of protection and harmony woven into every carpet
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">Dragon: The Celestial Guardian</h2>
@@ -53,9 +58,14 @@ export default function ArticlePage() {
           </p>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/reference/微信图片_20260617161720_16_2297.jpg" alt="Close-up of traditional Tibetan carpet pattern showing lotus and border designs" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161720_16_2297.jpg" alt="Close-up of traditional Tibetan carpet pattern showing lotus and border designs" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Lotus medallion and meander border — symbols of enlightenment and protection
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">Lotus: The Flower of Enlightenment</h2>

@@ -258,29 +258,79 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-            {[
-              { src: "/images/reference/微信图片_20260617161732_20_2297.jpg", alt: "Artisan weaving on a traditional vertical loom", span: "md:col-span-2 md:row-span-2" },
-              { src: "/images/reference/微信图片_20260617161715_14_2297.jpg", alt: "Close-up of hand-knotting technique", span: "" },
-              { src: "/images/reference/微信图片_20260617161737_22_2297.jpg", alt: "Naturally dyed wool yarns", span: "" },
-              { src: "/images/reference/微信图片_20260617161735_21_2297.jpg", alt: "Preparing highland wool for spinning", span: "" },
-              { src: "/images/reference/微信图片_20260617161720_16_2297.jpg", alt: "Traditional Tibetan carpet patterns", span: "md:col-span-2" },
-              { src: "/images/reference/微信图片_20260617161724_18_2297.jpg", alt: "Antique carpet detail", span: "" },
-              { src: "/images/reference/微信图片_20260617161722_17_2297.jpg", alt: "Finished carpet in domestic setting", span: "" },
-              { src: "/images/reference/微信图片_20260617161726_19_2297.jpg", alt: "Dragon and phoenix motif detail", span: "md:col-span-2" },
-            ].map((img, i) => (
-              <div
-                key={i}
-                className={`${img.span} overflow-hidden rounded-sm bg-secondary`}
-              >
+          {/* Bento-style curated gallery */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-4">
+            {/* Row 1: Featured large + 2 small */}
+            <div className="md:col-span-7 aspect-[16/10] overflow-hidden rounded-sm bg-secondary group">
+              <img
+                src="/images/reference/微信图片_20260617161732_20_2297.jpg"
+                alt="Artisan weaving on a traditional vertical loom"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:col-span-5 grid grid-rows-2 gap-3 md:gap-4">
+              <div className="aspect-[16/9] overflow-hidden rounded-sm bg-secondary group">
                 <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
+                  src="/images/reference/微信图片_20260617161715_14_2297.jpg"
+                  alt="Close-up of hand-knotting technique"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   loading="lazy"
                 />
               </div>
-            ))}
+              <div className="aspect-[16/9] overflow-hidden rounded-sm bg-secondary group">
+                <img
+                  src="/images/reference/微信图片_20260617161737_22_2297.jpg"
+                  alt="Naturally dyed wool yarns in vibrant colors"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            {/* Row 2: 3 equal */}
+            <div className="md:col-span-4 aspect-[4/3] overflow-hidden rounded-sm bg-secondary group">
+              <img
+                src="/images/reference/微信图片_20260617161735_21_2297.jpg"
+                alt="Preparing highland wool for spinning"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:col-span-4 aspect-[4/3] overflow-hidden rounded-sm bg-secondary group">
+              <img
+                src="/images/reference/微信图片_20260617161720_16_2297.jpg"
+                alt="Traditional Tibetan carpet patterns with dragon and phoenix motifs"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:col-span-4 aspect-[4/3] overflow-hidden rounded-sm bg-secondary group">
+              <img
+                src="/images/reference/微信图片_20260617161724_18_2297.jpg"
+                alt="Antique Tibetan carpet detail showing intricate knotting"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Row 3: 2 wide */}
+            <div className="md:col-span-7 aspect-[16/9] overflow-hidden rounded-sm bg-secondary group">
+              <img
+                src="/images/reference/微信图片_20260617161722_17_2297.jpg"
+                alt="Finished Tibetan carpet in a traditional household setting"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:col-span-5 aspect-[16/9] overflow-hidden rounded-sm bg-secondary group">
+              <img
+                src="/images/reference/微信图片_20260617161726_19_2297.jpg"
+                alt="Dragon and phoenix motif detail on a traditional Tibetan carpet"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                loading="lazy"
+              />
+            </div>
           </div>
 
           <div className="text-center mt-12">

@@ -26,9 +26,14 @@ export default function PatternsPage() {
           Silk Road.
         </p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161726_19_2297.jpg" alt="Tibetan carpet with traditional dragon and lotus motifs" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161726_19_2297.jpg" alt="Tibetan carpet with traditional dragon and lotus motifs" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Dragon and phoenix motifs — celestial guardians woven for protection and harmony
+          </figcaption>
+        </figure>
 
         <section className="mb-16">
           <h2 className="font-serif text-2xl text-foreground mb-4">Dragon: Power and Protection</h2>
@@ -53,9 +58,14 @@ export default function PatternsPage() {
           </p>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161720_16_2297.jpg" alt="Detailed view of Tibetan carpet patterns showing border designs and central motifs" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161720_16_2297.jpg" alt="Detailed view of Tibetan carpet patterns showing border designs and central motifs" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Intricate border designs framing a central lotus medallion
+          </figcaption>
+        </figure>
 
         <section className="mb-16">
           <h2 className="font-serif text-2xl text-foreground mb-4">Lotus: Enlightenment Rising</h2>

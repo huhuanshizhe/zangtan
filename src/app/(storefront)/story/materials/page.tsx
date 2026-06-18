@@ -25,9 +25,14 @@ export default function MaterialsPage() {
           colors that synthetic chemistry cannot replicate.
         </p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161735_21_2297.jpg" alt="Highland wool being prepared for spinning" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161735_21_2297.jpg" alt="Highland wool being prepared for spinning" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Raw highland wool being carded and prepared for hand-spinning
+          </figcaption>
+        </figure>
 
         <section className="mb-16">
           <h2 className="font-serif text-2xl text-foreground mb-4">Highland Wool: Born of Altitude</h2>
@@ -62,9 +67,14 @@ export default function MaterialsPage() {
           </p>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161737_22_2297.jpg" alt="Natural dyed wool yarns in vibrant colors" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161737_22_2297.jpg" alt="Natural dyed wool yarns in vibrant colors" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Hand-spun yarns dyed with madder root, indigo, and walnut hull — the traditional Tibetan palette
+          </figcaption>
+        </figure>
 
         <section className="mb-16">
           <h2 className="font-serif text-2xl text-foreground mb-4">Natural Dyes: Colors from the Earth</h2>

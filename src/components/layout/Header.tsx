@@ -29,7 +29,7 @@ export function Header() {
             href="/"
             className="flex items-center gap-2.5 font-serif text-2xl font-semibold tracking-widest text-foreground"
           >
-            <img src="/images/logo/logo-mark.png" alt="" className="h-7 w-7 object-contain" />
+            <img src="/images/logo/logo-mark-v1.png" alt="" className="h-7 w-7 object-cover object-top" />
             {siteConfig.name}
           </Link>
 

@@ -23,9 +23,14 @@ export default function ArticlePage() {
         </p>
         <p className="text-xs text-muted-foreground mb-12">June 2026 · 4 min read</p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/reference/微信图片_20260617161737_22_2297.jpg" alt="Naturally dyed wool yarns in vibrant colors ready for weaving" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161737_22_2297.jpg" alt="Naturally dyed wool yarns in vibrant colors ready for weaving" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Hand-spun yarns in the traditional Tibetan palette — madder red, indigo blue, walnut brown
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">The Dyer's Alchemy</h2>
@@ -59,9 +64,14 @@ export default function ArticlePage() {
           </ul>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/story/story-dyeing.png" alt="Natural plant dyeing process for Tibetan carpet wool" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/story/story-dyeing.png" alt="Natural plant dyeing process for Tibetan carpet wool" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            The dyer's alchemy — transforming plants and minerals into colors that synthetic chemistry cannot replicate
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">Why Natural Matters</h2>

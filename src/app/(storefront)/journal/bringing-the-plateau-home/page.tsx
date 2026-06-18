@@ -24,9 +24,14 @@ export default function ArticlePage() {
         </p>
         <p className="text-xs text-muted-foreground mb-12">June 2026 · 4 min read</p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/products/lifestyle-bedroom.png" alt="Tibetan carpet styled in a contemporary bedroom interior" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/products/lifestyle-bedroom.png" alt="Tibetan carpet styled in a contemporary bedroom interior" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            A Tibetan carpet beside a modern bed — warmth and cultural depth in a contemporary space
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">The Khaden: A Personal Island</h2>
@@ -54,9 +59,14 @@ export default function ArticlePage() {
           </p>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/products/lifestyle-meditation.png" alt="Meditation space styled with Tibetan carpet and natural elements" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/products/lifestyle-meditation.png" alt="Meditation space styled with Tibetan carpet and natural elements" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            A meditation corner defined by a Tibetan carpet — a warm boundary for practice
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">Design Principles</h2>

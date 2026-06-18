@@ -24,9 +24,14 @@ export default function ArticlePage() {
         </p>
         <p className="text-xs text-muted-foreground mb-12">June 2026 · 4 min read</p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/reference/微信图片_20260617161735_21_2297.jpg" alt="Highland wool being prepared for spinning on the Tibetan plateau" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161735_21_2297.jpg" alt="Highland wool being prepared for spinning on the Tibetan plateau" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Highland wool being carded and prepared for hand-spinning — the first step in a months-long process
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">Altitude Is Everything</h2>
@@ -51,9 +56,14 @@ export default function ArticlePage() {
           </p>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/reference/微信图片_20260617161715_14_2297.jpg" alt="Hand-spinning highland wool into yarn using traditional drop spindle" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161715_14_2297.jpg" alt="Hand-spinning highland wool into yarn using traditional drop spindle" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Hand-spinning with a drop spindle — a tool used on the plateau for millennia
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">Hand-Spun Character</h2>

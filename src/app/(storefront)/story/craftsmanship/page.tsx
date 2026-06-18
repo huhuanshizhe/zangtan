@@ -27,9 +27,14 @@ export default function CraftsmanshipPage() {
         </p>
 
         {/* Hero Image */}
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161732_20_2297.jpg" alt="Artisan weaving a Tibetan carpet on a traditional vertical loom" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161732_20_2297.jpg" alt="Artisan weaving a Tibetan carpet on a traditional vertical loom" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            A weaver at work on a traditional vertical loom in a Gyantse workshop
+          </figcaption>
+        </figure>
 
         {/* Section 1 */}
         <section className="mb-16">
@@ -67,9 +72,14 @@ export default function CraftsmanshipPage() {
         </section>
 
         {/* Image */}
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161715_14_2297.jpg" alt="Close-up of hand-knotting process showing wool yarn and warp threads" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161715_14_2297.jpg" alt="Close-up of hand-knotting process showing wool yarn and warp threads" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Close-up of the Tibetan knot being formed around the warp rod
+          </figcaption>
+        </figure>
 
         {/* Section 3 */}
         <section className="mb-16">

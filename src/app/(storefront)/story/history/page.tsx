@@ -26,9 +26,14 @@ export default function HistoryPage() {
           of handwork.
         </p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161724_18_2297.jpg" alt="Antique Tibetan carpet with traditional patterns displayed in natural light" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161724_18_2297.jpg" alt="Antique Tibetan carpet with traditional patterns displayed in natural light" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            An antique Tibetan carpet — centuries of cultural exchange woven into every knot
+          </figcaption>
+        </figure>
 
         <section className="mb-16">
           <h2 className="font-serif text-2xl text-foreground mb-4">Nomadic Beginnings</h2>
@@ -67,9 +72,14 @@ export default function HistoryPage() {
           </p>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161726_19_2297.jpg" alt="Historic Tibetan carpet showing cultural fusion of motifs" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161726_19_2297.jpg" alt="Historic Tibetan carpet showing cultural fusion of motifs" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            Silk Road influences: Chinese dragon motifs reinterpreted through Tibetan wool and knot
+          </figcaption>
+        </figure>
 
         <section className="mb-16">
           <h2 className="font-serif text-2xl text-foreground mb-4">Monastery & Palace: The Golden Age</h2>

@@ -24,9 +24,14 @@ export default function ArticlePage() {
         </p>
         <p className="text-xs text-muted-foreground mb-12">June 2026 · 4 min read</p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/reference/微信图片_20260617161720_16_2297.jpg" alt="Tibetan saddle rug showing bold equestrian patterns and traditional border designs" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161720_16_2297.jpg" alt="Tibetan saddle rug showing bold equestrian patterns and traditional border designs" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            A Tibetan saddle rug — bold patterns that served as both cushion and talisman for the journey
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">The Saddle Rug: Function Meets Art</h2>

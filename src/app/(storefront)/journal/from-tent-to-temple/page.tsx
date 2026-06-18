@@ -24,9 +24,14 @@ export default function ArticlePage() {
         </p>
         <p className="text-xs text-muted-foreground mb-12">June 2026 · 5 min read</p>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/reference/微信图片_20260617161724_18_2297.jpg" alt="Antique Tibetan carpet displayed in natural light showing its ceremonial context" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161724_18_2297.jpg" alt="Antique Tibetan carpet displayed in natural light showing its ceremonial context" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            An antique carpet that has traveled from nomadic tent to monastery hall — a textile with many lives
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">The Nomadic Tent</h2>
@@ -62,9 +67,14 @@ export default function ArticlePage() {
           </p>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-12">
-          <img src="/images/reference/微信图片_20260617161722_17_2297.jpg" alt="Traditional Tibetan household textile in its domestic context" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-12">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161722_17_2297.jpg" alt="Traditional Tibetan household textile in its domestic context" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            The household khaden — center of family life, woven in winter when the fields lay fallow
+          </figcaption>
+        </figure>
 
         <section className="mb-10">
           <h2 className="font-serif text-2xl text-foreground mb-4">The Monastery</h2>

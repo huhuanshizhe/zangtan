@@ -64,9 +64,14 @@ export default function KhadenPage() {
           </p>
         </section>
 
-        <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary mb-16">
-          <img src="/images/reference/微信图片_20260617161722_17_2297.jpg" alt="Traditional khaden in a Tibetan household setting" className="h-full w-full object-cover" />
-        </div>
+        <figure className="mb-16">
+          <div className="aspect-[2/1] overflow-hidden rounded-sm bg-secondary">
+            <img src="/images/reference/微信图片_20260617161722_17_2297.jpg" alt="Traditional khaden in a Tibetan household setting" className="h-full w-full object-cover" />
+          </div>
+          <figcaption className="text-xs text-muted-foreground/70 mt-3 italic">
+            A khaden on the kang — the center of family life in a traditional Tibetan home
+          </figcaption>
+        </figure>
 
         <section className="mb-16">
           <h2 className="font-serif text-2xl text-foreground mb-4">The Khaden in a Modern Home</h2>
