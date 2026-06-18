@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/admin", "/api/", "/checkout", "/order/"],
       },
     ],
-    sitemap: `${siteConfig.url}/sitemap.xml`,
+    sitemap: "https://wovenplateau.chanyechuhai.com/sitemap.xml",
   };
 }

@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = siteConfig.url;
+  const baseUrl = "https://wovenplateau.chanyechuhai.com";
 
   const staticPages: MetadataRoute.Sitemap = [
     {
