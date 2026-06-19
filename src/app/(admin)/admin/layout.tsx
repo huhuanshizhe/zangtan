@@ -9,6 +9,7 @@ import {
   Settings,
   LogOut,
   Image,
+  MessageSquare,
 } from "lucide-react";
 
 const ADMIN_COOKIE = "zangtan_admin_session";
@@ -37,6 +38,7 @@ export default async function AdminLayout({
     { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
     { href: "/admin/products", label: "Products", icon: Package },
     { href: "/admin/orders", label: "Orders", icon: ShoppingCart },
+    { href: "/admin/leads", label: "Inquiries", icon: MessageSquare },
     { href: "/admin/categories", label: "Categories", icon: Tag },
     { href: "/admin/images", label: "AI Images", icon: Image },
     { href: "/admin/settings", label: "Settings", icon: Settings },

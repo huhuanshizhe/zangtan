@@ -13,6 +13,17 @@ import {
   index,
   uniqueIndex,
 } from "drizzle-orm/pg-core";
+
+// ============ Inquiry Status Enum ============
+
+export const inquiryStatusEnum = pgEnum("inquiry_status", [
+  "new",
+  "contacted",
+  "qualified",
+  "quoted",
+  "converted",
+  "closed",
+]);
 import { relations } from "drizzle-orm";
 
 // ============ Enums ============
@@ -353,3 +364,35 @@ export const siteSettings = pgTable("site_settings", {
   value: jsonb("value").notNull(),
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
+
+// ============ Inquiries / Leads ============
+
+export const inquiries = pgTable(
+  "inquiries",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    sessionId: varchar("session_id", { length: 100 }),
+    name: varchar("name", { length: 200 }),
+    email: varchar("email", { length: 320 }),
+    phone: varchar("phone", { length: 50 }),
+    company: varchar("company", { length: 200 }),
+    country: varchar("country", { length: 100 }),
+    sourcePage: varchar("source_page", { length: 500 }),
+    interests: text("interests"),
+    message: text("message"),
+    conversationSummary: text("conversation_summary"),
+    status: inquiryStatusEnum("status").default("new").notNull(),
+    priority: varchar("priority", { length: 20 }).default("medium"),
+    assignedTo: varchar("assigned_to", { length: 200 }),
+    adminNotes: text("admin_notes"),
+    metadata: jsonb("metadata").$type<Record<string, unknown>>(),
+    contactedAt: timestamp("contacted_at"),
+    createdAt: timestamp("created_at").defaultNow().notNull(),
+    updatedAt: timestamp("updated_at").defaultNow().notNull(),
+  },
+  (table) => [
+    index("inquiries_status_idx").on(table.status),
+    index("inquiries_email_idx").on(table.email),
+    index("inquiries_created_idx").on(table.createdAt),
+  ]
+);
