@@ -1,16 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Minus, Plus, X, ShoppingBag, Truck, Shield } from "lucide-react";
+import { ArrowLeft, Minus, Plus, X, ShoppingBag, Truck, Shield, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCartStore } from "@/stores/cart";
 import { useCurrencyStore } from "@/stores/currency";
+import { useChatStore } from "@/stores/chat";
 import { siteConfig } from "@/config/site";
 
 export default function CartPage() {
   const { items, removeItem, updateQuantity, subtotal, clearCart } =
     useCartStore();
   const { formatConverted } = useCurrencyStore();
+  const openChat = useChatStore((s) => s.open);
 
   const freeShippingRemaining =
     siteConfig.shipping.freeShippingThreshold - subtotal();
@@ -216,6 +218,17 @@ export default function CartPage() {
               >
                 Proceed to Checkout
               </Link>
+
+              <button
+                onClick={() => {
+                  const itemNames = items.map((i) => i.name).join(", ");
+                  openChat(`I have items in my cart (${itemNames}). I have a question before placing my order.`);
+                }}
+                className="w-full flex items-center justify-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors py-1"
+              >
+                <Sparkles className="h-3.5 w-3.5" />
+                Questions before ordering? Ask Tenzin
+              </button>
 
               {/* Trust Signals */}
               <div className="space-y-3 pt-4 border-t border-border">

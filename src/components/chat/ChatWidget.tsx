@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { X, Send, MessageCircle, Loader2, User, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useChatStore } from "@/stores/chat";
 
 interface Message {
   role: "user" | "assistant";
@@ -48,7 +49,11 @@ function cleanMarkdown(text: string): string {
 }
 
 export function ChatWidget() {
-  const [isOpen, setIsOpen] = useState(false);
+  const isOpen = useChatStore((s) => s.isOpen);
+  const contextMessage = useChatStore((s) => s.contextMessage);
+  const setIsOpen = useChatStore((s) => s.open);
+  const closeChat = useChatStore((s) => s.close);
+  const clearContext = useChatStore((s) => s.clearContext);
   const [messages, setMessages] = useState<Message[]>([WELCOME_MESSAGE]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -84,6 +89,18 @@ export function ChatWidget() {
       setTimeout(() => inputRef.current?.focus(), 300);
     }
   }, [isOpen]);
+
+  // Handle context message from external triggers
+  useEffect(() => {
+    if (isOpen && contextMessage) {
+      const timer = setTimeout(() => {
+        sendMessage(contextMessage);
+        clearContext();
+      }, 500);
+      return () => clearTimeout(timer);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen, contextMessage]);
 
   const sendMessage = useCallback(
     async (content: string) => {
@@ -229,7 +246,7 @@ export function ChatWidget() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
-            onClick={() => setIsOpen(true)}
+            onClick={() => setIsOpen()}
             className="fixed bottom-6 right-6 z-[9999] flex h-14 w-14 items-center justify-center rounded-full bg-foreground text-background shadow-lg hover:scale-105 transition-transform group"
             aria-label="Chat with Tenzin"
           >
@@ -280,7 +297,7 @@ export function ChatWidget() {
                   Online
                 </span>
                 <button
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => closeChat()}
                   className="ml-2 rounded-full p-1.5 text-background/60 hover:text-background hover:bg-background/10 transition-colors"
                   aria-label="Close chat"
                 >

@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Heart, Truck, Shield } from "lucide-react";
+import { Heart, Truck, Shield, Sparkles } from "lucide-react";
 import { AddToCartButton } from "@/components/storefront/AddToCartButton";
 import { ProductPrice } from "@/components/storefront/ProductPrice";
 import { getProductBySlug, allProducts } from "@/lib/data/products";
+import { AskTenzinButton } from "@/components/chat/AskTenzinButton";
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 
@@ -288,6 +289,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   <Heart className="h-4 w-4" />
                   Save to Wishlist
                 </button>
+                <AskTenzinButton productName={product.name} productCategory={product.category} />
               </div>
 
               {/* Key Info */}

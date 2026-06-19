@@ -1,3 +1,5 @@
+import { ContactChatCTA } from "@/components/chat/ContactChatCTA";
+
 export default function ContactPage() {
   return (
     <div className="py-24 lg:py-32">
@@ -14,6 +16,9 @@ export default function ContactPage() {
             sizing, or want to discuss a custom commission, we are here to help.
           </p>
         </div>
+
+        {/* Instant Chat CTA */}
+        <ContactChatCTA />
 
         <div className="max-w-xl mx-auto">
           <form className="space-y-6">
