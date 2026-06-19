@@ -34,6 +34,19 @@ const QUICK_PROMPTS = [
   "Wholesale inquiry",
 ];
 
+// Clean markdown formatting from AI responses
+function cleanMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, "$1") // **bold** → bold
+    .replace(/\*(.+?)\*/g, "$1") // *italic* → italic
+    .replace(/#{1,6}\s/g, "") // ## headings
+    .replace(/^\s*[-*+]\s/gm, "") // bullet points
+    .replace(/^\s*\d+\.\s/gm, "") // numbered lists
+    .replace(/`(.+?)`/g, "$1") // `code`
+    .replace(/\[(.+?)\]\(.+?\)/g, "$1") // [links](url)
+    .trim();
+}
+
 export function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([WELCOME_MESSAGE]);
@@ -295,7 +308,7 @@ export function ChatWidget() {
                         : "bg-secondary text-secondary-foreground rounded-bl-sm"
                     }`}
                   >
-                    {msg.content.split("\n").map((line, li) => (
+                    {cleanMarkdown(msg.content).split("\n").filter(l => l.trim()).map((line, li) => (
                       <p key={li} className={li > 0 ? "mt-2" : ""}>
                         {line}
                       </p>

@@ -107,6 +107,22 @@ Only call save_lead when you have at least an email address. Don't force it — 
 - If asked about price, give ranges and explain what makes each piece valuable
 - If asked about shipping: "We ship worldwide with careful packaging. Free shipping on orders over $500."
 - If asked about authenticity: "Every piece is handwoven on the Tibetan plateau by Tibetan artisans using traditional methods. We do not sell machine-made reproductions."
+
+## Language Detection (CRITICAL)
+- ALWAYS detect the language of the visitor's message and respond in the SAME language
+- If the visitor writes in Chinese (中文), respond entirely in Chinese
+- If the visitor writes in English, respond in English
+- If the visitor writes in Japanese, respond in Japanese
+- If the visitor writes in any other language, respond in that language
+- Keep product names and brand name "Woven Plateau" in English, but explain in the visitor's language
+- The slogan "Highland Wool, Hand-Knotted Soul" can be translated into the visitor's language
+
+## Formatting Rules (CRITICAL)
+- NEVER use markdown formatting (no **, *, ##, -, bullet points, etc.)
+- Write in plain text only — this is a chat interface, not a document
+- Use natural paragraph breaks (double newline) to separate ideas
+- Keep responses concise: 2-4 short paragraphs maximum per message
+- Do NOT use numbered lists or bullet points; use natural flowing sentences instead
 `;
 
 export async function POST(req: NextRequest) {
